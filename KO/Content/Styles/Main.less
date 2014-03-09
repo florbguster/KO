@@ -1,0 +1,98 @@
+﻿@BackgroundColor: #909090;
+@DivBorder: 1px dashed #222255;
+@Header4Color: #505050;
+
+
+/* HTML Tags */
+body {
+	width: 85%;
+	margin: 1em auto 1em auto;
+	background-color: @BackgroundColor;
+	font-family: Century Gothic, Corbel;
+	h4 { 
+		color: @Header4Color;
+		background-color: #FFCC00;
+		padding: auto auto .2em auto;
+		border-radius: .5em;
+		text-indent: 1em;
+	}
+	button{
+		font-family: Century Gothic, Corbel;
+	}
+}
+
+
+
+/* CLASSES */ 
+
+.activeMenu
+{
+    color: #60DDDD;  
+    background-color: #77EE77;  
+}
+
+.carMakeListItem{
+	float: left;
+	width: 10em;
+}
+
+.contentDiv{
+	padding: 1em;
+	background-color: lighten(@BackgroundColor, 40%);
+	border-radius: .4em;
+}
+
+.left{
+	float: left;
+}
+
+
+
+/* IDs */
+
+#CarMakeList{
+	margin: 0;
+}
+
+#CarMakeSection{
+	width: 18em;
+}
+
+#ObservableArrayTab{
+	ul{
+		padding: 0;
+		li {
+			list-style-type: none;
+			padding: .4em .4em .4em 0;
+		}
+	}
+}
+
+#NavigationMenu{
+	padding:0;
+	li{
+		display: inline;
+		list-style-type: none;
+		a
+		{
+			background-color: lighten(@BackgroundColor, 40%);
+			padding: .5% 1% .5% 1%; 
+			text-decoration: none;
+			border-radius: .5em;
+			color: #000000;
+		}
+		a:hover{
+			background-color: #229922;
+			color: #FFFFFF;
+		} 
+		a:active{
+			background-color: #11DD11;
+			color: #FFFFFF;
+		}
+	}
+}
+
+#UpdateLinks {
+	text-decoration: none;
+	background-color: lighten(@BackgroundColor, 70%);
+}
