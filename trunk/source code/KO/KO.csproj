@@ -108,6 +108,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CarModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +121,11 @@
     <Content Include="Scripts\jquery-2.1.0-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-3.1.0.debug.js" />
     <Content Include="Scripts\knockout-3.1.0.js" />
     <Content Include="Scripts\less-1.5.1.js" />
@@ -135,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -148,9 +153,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\Styles\Main.less" />
-    <Content Include="Views\ContentViews\Observables.cshtml" />
-    <Content Include="Views\ContentViews\Utilities.cshtml" />
-    <Content Include="Views\ContentViews\ObservableArray.cshtml" />
+    <Content Include="Views\ObservableArray.cshtml" />
+    <Content Include="Views\Observables.cshtml" />
     <None Include="Scripts\jquery-2.1.0.min.map" />
   </ItemGroup>
   <PropertyGroup>

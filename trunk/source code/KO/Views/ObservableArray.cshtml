@@ -1,20 +1,28 @@
-﻿@{
+﻿@model KO.Models.CarModel
+@{
     ViewBag.Title = "Observable Array - K.O.";
 }
  <div id="ObservableArrayTab" class="contentDiv">
         <h4>Car Makes</h4>
         <div id="CarMakeSection" >
             
+
+
             <div id="InputSection">
                 <div id="EditMakeInputSection" data-bind="with: selectedMake"> 
-                    <input id="EditMakeInput" type="text" data-bind="value: Name" /> 
+                    @Html.TextBoxFor(x => x.EditMakeName, 
+                                            new { id="EditMakeInput", 
+                                                  type="text", 
+                                                  data_bind="value: Name"})
                     <button id="SaveButton">Save</button>
                 </div>
                 <div id="AddMakeInputSection"> 
-                    <input id="AddMake" type="text" 
-                            placeholder="Add New Make" 
-                            data-bind="value: newMakeToAdd,
-                                        valueUpdate: 'click'"/>
+                    @Html.TextBoxFor(x => x.AddMakeName,  
+                                            new { id="AddMake", 
+                                                type="text", 
+                                                placeholder="Add New Make", 
+                                                data_bind="value: newMakeToAdd",
+                                                valueUpdate= "click"})
                     <button id="AddButton" data-bind="click: addNewMake">+ Add</button>
                 </div>
             </div>
@@ -31,4 +39,4 @@
         </div>
  </div>
  
- <script src="@Url.Content("~/Scripts/ContentScripts/ObservableArray.js")" type="text/javascript"></script>
+ <script src="@Url.Content("~/Scripts/ContentScripts/ObservableArray.js")" type="text/javascript"></script> 

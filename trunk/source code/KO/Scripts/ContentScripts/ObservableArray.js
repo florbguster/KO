@@ -1,12 +1,17 @@
 ﻿/// <reference path="../jquery-2.1.0.js" />
 /// <reference path="../jquery-2.1.0-vsdoc.js" />
 /// <reference path="../knockout-3.1.0.js" />
+/// <reference path="../jquery.validate.js" />
+/// <reference path="../jquery.validate.unobtrusive.js" />
+
 
 
 
 $(function () {
     // ON LOAD
     $('#EditMakeInputSection').hide();
+
+
     var data = [
         { Id: 1, Name: ko.observable("Audi") },
         { Id: 2, Name: ko.observable("BMW") },
@@ -54,14 +59,11 @@ $(function () {
         });
     });
 
+    // EVENTS
     $('#CarMakeList').on('click', '.itemDelete', function (event) {
         var itemToRemove = ko.dataFor(this);
         viewModel.carMakes.remove(itemToRemove);
     });
 
     ko.applyBindings(viewModel);
-
-
-    // EVENTS
-
 });
