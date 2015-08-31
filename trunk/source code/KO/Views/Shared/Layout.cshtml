@@ -13,8 +13,8 @@
 </head>
 <body>
     <ul id="NavigationMenu">
-        <li>@Html.ActionLink("Observable Array", "ObservableArray", null, null)</li>
-        <li>@Html.ActionLink("Observables", "Observables", null, null)</li>
+        <li>@Html.ActionLink( "Observable Array", "ObservableArray", null, null, new { id = "observableArray" } )</li>
+        <li>@Html.ActionLink( "Observables", "Observables", null, null, new { id = "observables" } )</li>
     </ul>
     <div id="AppContents">
         @RenderBody()

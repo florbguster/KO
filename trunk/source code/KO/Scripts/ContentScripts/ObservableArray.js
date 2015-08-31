@@ -65,5 +65,8 @@ $(function () {
         viewModel.carMakes.remove(itemToRemove);
     });
 
+    $('#observables').removeClass("active");
+    $('#observableArray').addClass("active");
+
     ko.applyBindings(viewModel);
 });

@@ -23,5 +23,8 @@ $(function () {
         itemToRemove.css("color", "Red");
     });
 
+    $('#observableArray').removeClass("active");
+    $('#observables').addClass("active");
+
     ko.applyBindings(viewModel);
 });
