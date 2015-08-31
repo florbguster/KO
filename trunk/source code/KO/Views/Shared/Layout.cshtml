@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>K.O. Practices</title>
+
+    <link href="@Url.Content("~/Content/main.less")" rel="stylesheet/less" type="text/css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js" type="text/javascript"></script>
+</head>
+<body>
+    <ul id="NavigationMenu">
+        <li>@Html.ActionLink("Observable Array", "ObservableArray", null, null)</li>
+        <li>@Html.ActionLink("Observables", "Observables", null, null)</li>
+    </ul>
+    <div id="AppContents">
+        @RenderBody()
+    </div>
+</body>
+</html>
