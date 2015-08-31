@@ -10,12 +10,12 @@ namespace KO.Controllers
     {
         public ActionResult ObservableArray()
         {
-            return View("~/Views/ObservableArray.cshtml");
+            return View();
         }
 
         public ActionResult Observables()
         {
-            return View("~/Views/Observables.cshtml");
+            return View();
         }
     }
 }

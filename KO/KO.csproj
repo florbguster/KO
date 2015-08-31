@@ -149,8 +149,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\main.less" />
-    <Content Include="Views\ObservableArray.cshtml" />
-    <Content Include="Views\Observables.cshtml" />
+    <Content Include="Views\Home\ObservableArray.cshtml" />
+    <Content Include="Views\Home\Observables.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
